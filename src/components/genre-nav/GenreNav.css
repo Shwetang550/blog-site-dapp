@@ -1,0 +1,44 @@
+.genreNav {
+    padding: 11px 0;
+    background-color: #D7E9F7;
+    border-bottom: 1px solid #797A7E;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.genreNav_left {
+    display: flex;
+    flex: .65;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.genreNav_left > * {
+    text-decoration: none;
+    color: #797A7E;
+    font-weight: 500;
+    font-size: 17px;
+    /* padding-right: 18px; */
+}
+
+.genreNav_left > *:hover {
+    text-decoration: underline;
+}
+
+.genreNav-active {
+
+}
+
+.genreNav_right {
+    display: flex;
+    flex: .35;
+    align-items: center;
+    justify-content: center;
+}
+
+.genreNav_right > input {
+    padding: 6px;
+    width: 50%;
+}

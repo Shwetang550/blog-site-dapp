@@ -1,0 +1,33 @@
+.shareArticle {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shareArticle > p {
+    font-weight: bold;
+    color: #363636;
+    padding-left: 25px;
+}
+
+.shareArticle_icons {
+    display: flex;
+    flex: .3;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shareArticle_icons > .MuiIconButton-root  {
+    color: #363636;
+}
+
+.shareArticle_icons > .MuiIconButton-root:hover {
+    color: #7ACBCD;
+}

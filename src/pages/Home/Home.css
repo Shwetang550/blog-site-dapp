@@ -1,0 +1,135 @@
+.home {
+    /* width: 100%; */
+    /* min-height: 90vh; */
+    background-color: #133B5C;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_recBlog {
+    width: 75%;
+    height: 90vh;
+    margin: 4% auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_recBlog > h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin: 0 auto;
+    width: 65%;
+}
+
+.home_recBlog > img {
+    margin-top: 32px;
+    width: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.home_recBlog > .home_recBlog-des {
+    width: 40%;
+    /* margin: 0px auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_recBlog > .home_recBlog-des > p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fffa;
+}
+
+.home_otherContent {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 45px;
+    padding: 20px 0;
+}
+
+.home_otherContent > h2 {
+   width: 50%; 
+   font-size: 32px;
+   text-align: center; 
+   border-bottom: 1px solid #797A7E; 
+   line-height: 0.1em;
+   margin: 40px auto; 
+} 
+
+.home_otherContent > h2 > span { 
+    background:#fff; 
+    padding:0 20px; 
+    color: #404040;
+}
+
+.home_topPick {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home_blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home_topPick-right {
+    width: 25vw;
+    padding: 10px;
+    align-self: flex-start;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.home_topPick-right > h2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 800;
+    color: #404040;
+
+    margin: 10px 10px 10px 0;
+}
+
+.home_topPick-right > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home_topPick-right > div > .home_topPick-right_tags {
+    width: fit-content;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin: 4px;
+    color: #aaa;
+}
+
+.home_topPick-right > div > .home_topPick-right_tags:hover {
+    cursor: pointer;
+    background-color: #7ACBCD;
+    color: #fff !important;
+    border: 1px solid #7ACBCD;
+}
+
+.home_topPick-right_tags > span {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
