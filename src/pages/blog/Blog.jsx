@@ -51,7 +51,7 @@ const Blog = () => {
                 <div className='blog_content'>
                     
                     <div className='blog_date'>
-                        <h3>{blog?.authorName}</h3>
+                        <h3>Author: {blog?.authorName}</h3>
                     </div>
                     
                     <h1>{blog?.title}</h1>

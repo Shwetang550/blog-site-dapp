@@ -29,7 +29,7 @@
 .relatedBlog-card {
     /* padding: 10px;
     background-color: #fff; */
-    min-width: 300px;
+    width: 300px;
     margin: 0 20px;
     /* border-radius: 10px !important; */
     /* border: 1px solid #a6a6a6; */

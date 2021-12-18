@@ -14,8 +14,7 @@ import Footer from '../../components/footer/Footer';
 const Home = () => {
     const [blogs, setBlogs] = useState([]);
     const [account, setAccount] = useState();
-    const [contract, setContract] = useState();
-    const [numberOfBlogs, setNumberOfBlogs] = useState();
+    const [homeBlog, setHomeBlog] = useState();
 
     useEffect(() => { 
         const fetchData = async () => { 
@@ -24,12 +23,14 @@ const Home = () => {
             const accounts = await web3.eth.getAccounts();
             setAccount(accounts[0]);
 
-            const balance = await web3.eth.getBalance(accounts[0], (err, bal) => console.log(web3.utils.fromWei(bal, 'ether')));
+            // const balance = await web3.eth.getBalance(accounts[0], (err, bal) => console.log(web3.utils.fromWei(bal, 'ether')));
 
             const blogContract = new web3.eth.Contract(ABI.abi, ABI.networks[5777].address);
-            setContract(blogContract);
 
             const blogNumber = await blogContract.methods.blogNumber().call();
+
+            const randomBlog = await blogContract.methods.titleToData(1).call();
+            setHomeBlog(randomBlog);
 
             for (let i = 1; i <= blogNumber; i++) {
                 const blog = await blogContract.methods.titleToData(i).call();
@@ -50,16 +51,15 @@ const Home = () => {
             <div className='home'>
                 
                 <div className='home_recBlog'>
-                    
+
                     <div className='home_recBlog-des'>
-                        <p>Growth - December 7, 2020</p>
-                        <p>Written by Shwetang Singh</p>
+                        <p>Written by <span>{homeBlog?.authorName}</span></p>
                     </div>
                     
-                    <h2>How to handle shipping and delivery during a world-wide pandemic</h2>
-
+                    <h2>{homeBlog?.title}</h2>
+                    
                     <img
-                        src="https://media.istockphoto.com/photos/delivery-concept-asian-man-hand-accepting-a-delivery-boxes-from-at-picture-id1221101939?b=1&k=20&m=1221101939&s=170667a&w=0&h=2m-uIV5HQdCuIocqZlxWMij9jyfcf7BNNr7egiGPIDM="
+                        src={homeBlog?.imageUrl}
                         alt="blog-img"
                     />
 

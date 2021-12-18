@@ -36,11 +36,10 @@
 }
 
 .home_recBlog > .home_recBlog-des {
-    width: 40%;
-    /* margin: 0px auto; */
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .home_recBlog > .home_recBlog-des > p {
