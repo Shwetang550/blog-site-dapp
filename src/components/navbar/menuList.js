@@ -3,5 +3,5 @@ export const menu = [
     { title: 'About', path: '/about' },
     { title: 'Contact', path: '/contact-us' },
     { title: 'Sign In', path: '/sign-in' },
-    { title: 'Get Started', path: '/sign-up' },
+    { title: 'Create Blog', path: '/create-blog' },
 ];

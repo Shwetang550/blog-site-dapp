@@ -16,6 +16,7 @@
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
+    background-color: #fff;
 }
 
 .author_details {

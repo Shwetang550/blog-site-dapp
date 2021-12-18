@@ -4,7 +4,7 @@ import './BlogCard.css';
 // react-router
 import { useHistory } from 'react-router-dom';
 
-const BlogCard = ({ title, date, author, imageUrl }) => {
+const BlogCard = ({ title, blogNumber, author, imageUrl }) => {
     const history = useHistory();
 
     return (
@@ -16,10 +16,9 @@ const BlogCard = ({ title, date, author, imageUrl }) => {
             />
 
             <div className="home_newsContent">
-                <h3 onClick={() => history.push('/blog')}>{title}</h3>
+                <h3 onClick={() => history.push(`/blog/${blogNumber}`)}>{title}</h3>
                     
                 <p>
-                    <span>{date}</span>
                     <span>{author}</span>
                 </p>
             </div>

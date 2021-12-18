@@ -1,0 +1,27 @@
+.createBlog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.createBlog > h1 {
+    color: #797A7E;
+    margin: 25px auto;
+}
+
+.createBlog > .MuiTextField-root {
+    margin: 20px auto;
+    width: 50vw;
+}
+
+.createBlog > .MuiButton-root {
+    background-color: #7ACBCD;
+    color: #fff;
+}
+
+.createBlog > .MuiButton-root:hover {
+    color: #7ACBCD;
+    background-color: #fff;
+}

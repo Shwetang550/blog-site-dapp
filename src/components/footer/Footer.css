@@ -1,0 +1,29 @@
+.footer {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f8f8ff;
+    width: 100%;
+}
+
+.footer > p {
+    color: gray;
+}
+
+.footer > p > a {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+
+.footer > p > a:hover {
+    text-decoration: underline;
+    color: #42A5F5;
+}
+
+.rights {
+    font-size: 12px;
+}

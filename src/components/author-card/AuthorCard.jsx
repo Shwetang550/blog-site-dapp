@@ -8,7 +8,7 @@ const AuthorCard = () => {
         <div className='authorCard'>
             
             <img
-                src='https://www.theportlandclinic.com/wp-content/uploads/2019/07/Person-Curtis_4x5-e1564616444404-300x300.jpg'
+                src='https://cdn.iconscout.com/icon/free/png-256/person-2653741-2202553.png'
                 alt='author-img'
             />
 
